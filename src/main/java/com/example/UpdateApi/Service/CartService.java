@@ -18,7 +18,7 @@ public class CartService {
     HttpEntity<Cart> request = new HttpEntity<>(cart);
 
     ResponseEntity<String> response = restTemplate.exchange(
-        "http://localhost:8081/updateproduct",
+        "https://firstapi-9.onrender.com/updateproduct",
         HttpMethod.PUT,
         request,
         String.class
